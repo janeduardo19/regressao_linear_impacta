@@ -1,0 +1,15 @@
+# Credenciais (nunca versionar)
+.env
+.env.*
+!.env.example
+
+# Ambiente virtual e caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Arquivos temporários de execução
+_*.ipynb
+.DS_Store
+Thumbs.db
