@@ -39,5 +39,6 @@ Os dados são lidos do Snowflake (banco `PROJETO_INEP`), em arquitetura por cama
   linear proporcional `y(t+1) = b · y(t)` é simples e competitivo.
 - Modelos em escala logarítmica e com efeitos fixos apresentaram desempenho inferior.
 - No EAD, o Censo não registra vagas nem inscrições; a previsão é mais precisa no nível da instituição.
+- Restringir a análise às entidades presentes nos 10 anos (painel balanceado) foi testado e descartado como modelo principal por introduzir viés de sobrevivência; fica como análise de robustez (seção 5 do notebook).
 
 O detalhamento está na seção "Conclusões e recomendações" do notebook.
