@@ -28,6 +28,18 @@ Presencial e EAD.
 
 3. Abrir `regression.ipynb` e executar as células em ordem.
 
+## Estrutura da análise
+
+O notebook percorre os cinco tipos de análise de dados:
+
+| Camada | Pergunta | Seção |
+|---|---|---|
+| Descritiva | O que aconteceu? | 2 |
+| Diagnóstica | Por que aconteceu? | 3 |
+| Preditiva | O que deve acontecer? | 4 (presencial), 5 (EAD) e 6 (teste de sensibilidade) |
+| Prescritiva | O que fazer? (cenários e regra de decisão) | 7 |
+| Cognitiva | Aprendizado contínuo e interação com o usuário | 8.5 (próximos passos) |
+
 ## Dados
 
 Os dados são lidos do Snowflake (banco `PROJETO_INEP`), em arquitetura por camadas
@@ -39,6 +51,7 @@ Os dados são lidos do Snowflake (banco `PROJETO_INEP`), em arquitetura por cama
   linear proporcional `y(t+1) = b · y(t)` é simples e competitivo.
 - Modelos em escala logarítmica e com efeitos fixos apresentaram desempenho inferior.
 - No EAD, o Censo não registra vagas nem inscrições; a previsão é mais precisa no nível da instituição.
+- A análise prescritiva apresenta a demanda de 2025 em três cenários (pessimista, base e otimista) e uma regra de decisão (Manter, Atenção, Revisar a oferta) para o presencial.
 - Restringir a análise às entidades presentes nos 10 anos (painel balanceado) foi testado e descartado como modelo principal por introduzir viés de sobrevivência; fica como análise de robustez (seção 5 do notebook).
 
 O detalhamento está na seção "Conclusões e recomendações" do notebook.
